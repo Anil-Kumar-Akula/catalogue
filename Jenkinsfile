@@ -36,7 +36,7 @@ pipeline {
            
           }
         }
-        stage {
+        stage ('build')
           steps {
             script {
               sh """
