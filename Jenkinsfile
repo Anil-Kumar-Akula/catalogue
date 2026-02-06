@@ -25,12 +25,11 @@ pipeline {
          }
        }
        // This is Testing stage
-        stage('Test') { 
+        stage('install dependencies') { 
           steps {
             script {
               sh """
-                 echo "By using the Hybrid method testing the pipeline"
-                 echo $COURSE
+                 npm install
                  
                  """
             }
